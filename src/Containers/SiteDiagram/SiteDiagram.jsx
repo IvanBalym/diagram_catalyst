@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
-// import SiteDiagram from '../../Components/SiteDiagram';
+import { SiteDiagram } from '../../Components/SiteDiagram';
 
-class SiteDiagramContainer extends Component {
+export class SiteDiagramContainer extends Component {
     render() {
         return(
             <div>
-                second div
-                {/*<SiteDiagram />*/}
+                <SiteDiagram rover={this.props.rover}/>
             </div>
         )
     }
 }
-
-export default SiteDiagramContainer;
