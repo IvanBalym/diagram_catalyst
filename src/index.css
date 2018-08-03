@@ -1,14 +1,62 @@
+:root {
+    --border-thick: 2px;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
 
+.rover-item {
+    float: left;
+    padding: 5px;
+}
+
 .hydraulic-pump {
   width: 60px;
-  height: 340px;
+  height: 260px;
   float: left;
   background:url(blender.jpg);
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.hydraulic-pump-menu{
+    opacity: 0.1;
+    position: absolute;
+    transition: all 0.2s;
+    width: 100px;
+    height: 100px;
+    background: #aaaaaa;
+}
+
+.alarm0 {
+    opacity: 0.2;
+    margin: var(--border-thick);
+}
+
+.alarm1, .alarm5 {
+    border: solid var(--border-thick);
+    border-color: #95cd56;
+}
+
+.alarm2, .alarm3, .alarm6, .alarm7 {
+    border: solid var(--border-thick);
+    border-color: #fdbc23;
+}
+
+.alarm4 {
+    border: solid var(--border-thick);
+    border-color: #fff;
+}
+
+.alarm8, .alarm9, .alarm10, .alarm11, .alarm12, .alarm13, .alarm14, .alarm15  {
+    border: solid var(--border-thick);
+    border-color: #0072bc;
+}
+
+.alarm16  {
+    border: solid var(--border-thick);
+    border-color: #fa0016;
 }

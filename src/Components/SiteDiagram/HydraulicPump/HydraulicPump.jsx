@@ -2,11 +2,9 @@ import React, { Component } from 'react';
 
 export class HydraulicPump extends Component {
     render() {
-        console.log(this.props.alarm);
-        const {equipment_type, high_trigger_pc, channel_num, tank_level, flow_rate, auto , low_trigger_pc} = this.props.tank;
+        const {high_trigger_pc, channel_num, tank_level, flow_rate, auto , low_trigger_pc} = this.props.tank;
         return(
-            <div className='hydraulic-pump'>
-                <p>{equipment_type}</p>
+            <div className={'hydraulic-pump alarm'+this.props.alarm.code} >
                 <p>{high_trigger_pc}</p>
                 <p>{channel_num}</p>
                 <p>{tank_level}</p>
@@ -14,7 +12,6 @@ export class HydraulicPump extends Component {
 
                 <p>{auto}</p>
                 <p>{low_trigger_pc}</p>
-                <p></p>
             </div>
         )
     }

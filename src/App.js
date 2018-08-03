@@ -9,7 +9,7 @@ class App extends Component {
         super(props)
         this.state = {
             data: sampleData,
-            rover: 0
+            rover: 0,
         }
 
         this.handleSelectChange = this.handleSelectChange.bind(this);
@@ -20,6 +20,7 @@ class App extends Component {
             rover: +e.target.value
         })
     }
+
 
     render() {
         const  { data, rover } = this.state;
